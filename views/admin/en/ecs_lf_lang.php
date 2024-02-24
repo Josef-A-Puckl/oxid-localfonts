@@ -19,7 +19,9 @@
 
 $sLangName = 'English';
 $aLang = [
-    'charset'                             => 'UTF-8',
-    'SHOP_MODULE_ecs_main'                => 'Settings',
-    'SHOP_MODULE_ecslocalfontsaktivate'   => 'Flow-theme: Integrate Google Fonts locally (otherwise just remove)',
+    'charset'                                           => 'UTF-8',
+    'SHOP_MODULE_ecs_main'                              => 'Settings',
+    'SHOP_MODULE_ecslocalfontsaktivate'                 => 'Flow-theme: Integrate Google Fonts locally (otherwise just remove)',
+    'MODULVERSION'                                      => ' Modulversion',
+    'NOTRELEASED'                                       => ' not released for Shopversion ',
 ];

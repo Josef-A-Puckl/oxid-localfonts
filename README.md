@@ -2,6 +2,7 @@
 
 ## Shopversionen
 
+O3-Shop 1.3  
 OXID eShop 6.1 - 6.4 (nur GPL - Versionen!)
 
 ### Features
