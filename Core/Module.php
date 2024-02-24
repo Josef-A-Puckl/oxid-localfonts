@@ -18,20 +18,20 @@
 namespace Ecs\LocalFonts\Core;
 
 use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\Eshop\Core\ShopVersion;
 
 class Module extends Module_parent
 {
-    protected $_aShopVersion = ['6.1', '6.2', '6.3', '6.4', '1.3'];
-
     public function getTitle()
     {
         $ret = parent::getTitle();
 
         if ($this->getId() === 'ecs_localfonts') {
-            $sShopversion = \OxidEsales\Eshop\Core\ShopVersion::getVersion();
+            $aShopVersions = ['6.1', '6.2', '6.3', '6.4', '1.3'];
+            $sShopversion = ShopVersion::getVersion();
             $sShopversionParts = explode('.', $sShopversion);
             $majorMinorVersion = $sShopversionParts[0] . '.' . $sShopversionParts[1];
-            if (!in_array($majorMinorVersion, $this->_aShopVersion)) {
+            if (!in_array($majorMinorVersion, $aShopVersions)) {
                 $iLang = Registry::getLang()->getTplLanguage();
                 $sTitle = $this->getInfo('title', $iLang);
                 $sModuleVersion = $this->getInfo('version');
